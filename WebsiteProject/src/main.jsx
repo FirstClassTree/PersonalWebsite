@@ -2,12 +2,15 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { RouterProvider } from 'react-router-dom'
 import { createBrowserRouter } from 'react-router-dom'
-import './index.css'
+
 import App from './App.jsx'
+import './styles/index.css';
+
 import About from './about.jsx'
 import Projects from './Projects.jsx'
 import ErrorPage from './error-page.jsx'
 import Draw from './Draw.jsx'
+
 
 const router = createBrowserRouter([
 
@@ -35,13 +38,16 @@ const router = createBrowserRouter([
 ]);
 
 
+
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
+    
+
   <style>@import url(https://fonts.googleapis.com/css2?family=Roboto&display=swap);</style>
 
 
   <RouterProvider router={router}/>
-    
+  
 
   </React.StrictMode>,
 )
